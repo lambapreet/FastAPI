@@ -1,0 +1,20 @@
+fastapi
+uvicorn
+sqlalchemy
+passlib
+bcrypt
+python-jose
+aiofiles
+sqlmodel
+pydantic
+python-jose
+
+
+#  python -m venv fastapienv
+#   fastapienv/Scripts/activate  
+
+# pip install alembic
+# alembic init alembic
+# alembic revision -m "message"
+# alembic upgrade head
+# alembic revision --autogenrate -m "message"

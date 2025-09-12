@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Products{% endblock title %}
+
+{% block content %}
+    <h1>Product List</h1>
+
+    <!-- HTMX loads the product form -->
+    <div 
+        id="product-form" 
+        hx-get="/form" 
+        hx-trigger="load"
+    ></div>
+
+    <!-- HTMX loads the product list -->
+    <div 
+        id="product-list" 
+        hx-get="/product/lists" 
+        hx-trigger="load"
+    ></div>
+{% endblock content %}

@@ -1,0 +1,27 @@
+<form 
+    hx-post="/products" 
+    hx-target="#product-list" 
+    hx-swap="outerHTML"
+>
+    <!-- Title Field -->
+    <label for="title">Title:</label><br>
+    <input 
+        type="text"  
+        id="title"
+        name="title" 
+        placeholder="Enter product title" 
+        required
+    ><br><br>
+
+    <!-- Description Field -->
+    <label for="description">Description:</label><br>
+    <textarea  
+        id="description"
+        name="description" 
+        placeholder="Enter product description" 
+        required
+    ></textarea><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Add Product</button>
+</form>
